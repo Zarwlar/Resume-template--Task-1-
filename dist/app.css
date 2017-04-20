@@ -1,0 +1,74 @@
+.annotation {
+  display: table;
+  white-space: nowrap;
+}
+.annotation::after {
+  border-top: 1px solid #008000;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+.annotation::after {
+  left: 1.5%;
+}
+.logo__brand {
+  background-color: #3d6cb0;
+  border-radius: 50%;
+  width: 10.1em;
+  height: 10.1em;
+  box-shadow: 0px 0px 0px 0.6em #fff, 0px 0px 0px 0.7em #3d6cb0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.logo__first-name {
+  text-transform: uppercase;
+}
+.logo__last-name {
+  text-transform: uppercase;
+}
+.logo__specialty {
+  text-transform: uppercase;
+}
+.note__description {
+  display: block;
+  width: 60%;
+  margin-left: 2em;
+  margin-top: 0;
+}
+.note__title {
+  text-transform: uppercase;
+  color: #006cb3;
+  font-weight: bold;
+  font-family: UnifrakturCook-Bold, 'Arial';
+  background-image: url(images/a30ad08115c894ea4bf6fcca14207147.png);
+}
+.note__university {
+  text-transform: uppercase;
+  margin-left: 2em;
+  display: block;
+  background-image: url(images/3d3291f99fb37665400552a4d2cb846e.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.note::before {
+  content: "\25CF";
+  font-size: 2em;
+  margin-right: 0.4em;
+  position: relative;
+  top: 0.15em;
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url(fonts/MyriadPro-Bold.eot);
+  src: url(fonts/MyriadPro-Bold.eot?#iefix) format('embedded-opentype'), url(fonts/MyriadPro-Bold.woff) format('woff'), url(fonts/MyriadPro-Bold.ttf) format('truetype'), url(fonts/MyriadPro-Bold.svg#MyriadPro-Bold) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UnifrakturCook-Bold';
+  src: url(fonts/UnifrakturCook-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}

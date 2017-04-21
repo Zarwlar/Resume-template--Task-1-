@@ -20,7 +20,7 @@ module.exports = {
           use: ["css-loader",'stylus-loader']
         })},     
         {
-            test: /\.(pug|jade)$/, use: 'pug-loader'
+          test: /\.(pug|jade)$/, loaders: ['html-loader', 'pug-html-loader']
         },
         { test: /\.svg$/, use: 'url-loader?limit=5000&mimetype=image/svg+xml&name=fonts/[name].[ext]' },
         { test: /\.woff$/, use: 'url-loader?limit=5000&mimetype=application/font-woff&name=fonts/[name].[ext]' },

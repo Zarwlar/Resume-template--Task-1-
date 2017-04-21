@@ -10,7 +10,16 @@ html(lang="en")
     
     include blocks/logo/logo.pug
 
+    include blocks/annotation/annotation.pug
+    +annotation('_profile/annotation_profile.png','profile')
+    +annotation('_contact/annotation_contact.png','contact')
+    
+    +annotation('_experience/annotation_experience.png','experience')
+    +annotation('_skills/annotation_skills.png','skills')
+    +annotation('_software/annotation_software.png','software')
 
+
+    +annotation('_education/annotation_education.png','education')
     +note('это текст-"рыба", часто используемый в печати и вэб-дизайне. ' +
     'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' +  
     ' В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,' +
@@ -30,5 +39,5 @@ html(lang="en")
     ' используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без' +
      'заметных изменений пять веков, но и перешагнул в электронный дизайн.')
 
-     div.annotation Привет
+    
      

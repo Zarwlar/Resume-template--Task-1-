@@ -1,24 +1,31 @@
-.annotation {
-  display: table;
-  white-space: nowrap;
+.annotation__icon {
+  display: inline-block;
+  width: 60px;
+  height: 57px;
 }
-.annotation::after {
-  border-top: 1px solid #008000;
-  content: '';
-  display: table-cell;
+.annotation__text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: MyriadPro-Bold, 'Arial';
+  font-size: 2em;
   position: relative;
-  top: 0.5em;
-  width: 45%;
+  bottom: 0.55em;
+  padding-left: 0.21em;
 }
-.annotation::after {
-  left: 1.5%;
+.annotation__text::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
 }
 .logo__brand {
-  background-color: #3d6cb0;
+  background-color: #006cb3;
   border-radius: 50%;
   width: 10.1em;
   height: 10.1em;
-  box-shadow: 0px 0px 0px 0.6em #fff, 0px 0px 0px 0.7em #3d6cb0;
+  box-shadow: 0px 0px 0px 0.6em #fff, 0px 0px 0px 0.7em #006cb3;
   margin-left: 5%;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -37,7 +44,7 @@
 .logo__surname {
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 3.1em;
+  font-size: 3.07em;
   margin-top: -0.36em;
 }
 .logo__text {
@@ -54,15 +61,11 @@
   color: #006cb3;
   font-weight: bold;
   font-family: MyriadPro-Bold, 'Arial';
-  background-image: url(images/a30ad08115c894ea4bf6fcca14207147.png);
 }
 .note__university {
   text-transform: uppercase;
   margin-left: 2em;
   display: block;
-  background-image: url(images/3d3291f99fb37665400552a4d2cb846e.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 .note::before {
   content: "\25CF";
@@ -84,11 +87,5 @@
   src: url(fonts/MyriadPro-LightSemiExt.eot);
   src: local('\263A'), url(fonts/MyriadPro-LightSemiExt.woff) format('woff'), url(fonts/MyriadPro-LightSemiExt.ttf) format('truetype'), url(fonts/MyriadPro-LightSemiExt.svg) format('svg');
   font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'UnifrakturCook-Bold';
-  src: url(fonts/UnifrakturCook-Bold.ttf);
-  font-weight: bold;
   font-style: normal;
 }

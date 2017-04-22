@@ -1,43 +1,12 @@
 doctype html
 html(lang="en")
   head
-    title = Site 1
+    title Site_1
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   body
-    include blocks/note/note.pug
-    
-    include blocks/logo/logo.pug
-
-    include blocks/annotation/annotation.pug
-    +annotation('_profile/annotation_profile.png','profile')
-    +annotation('_contact/annotation_contact.png','contact')
-    
-    +annotation('_experience/annotation_experience.png','experience')
-    +annotation('_skills/annotation_skills.png','skills')
-    +annotation('_software/annotation_software.png','software')
-
-
-    +annotation('_education/annotation_education.png','education')
-    +note('это текст-"рыба", часто используемый в печати и вэб-дизайне. ' +
-    'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' +  
-    ' В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,' +
-    ' используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без' +
-     'заметных изменений пять веков, но и перешагнул в электронный дизайн.')
-
-    +note('это текст-"рыба", часто используемый в печати и вэб-дизайне. ' +
-    'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' +  
-    ' В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,' +
-    ' используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без' +
-     'заметных изменений пять веков, но и перешагнул в электронный дизайн.')
-
-
-    +note('это текст-"рыба", часто используемый в печати и вэб-дизайне. ' +
-    'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' +  
-    ' В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,' +
-    ' используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без' +
-     'заметных изменений пять веков, но и перешагнул в электронный дизайн.')
+    include blocks/container/container.pug
 
     
      

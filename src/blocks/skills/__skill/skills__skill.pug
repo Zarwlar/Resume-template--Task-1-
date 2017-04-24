@@ -1,7 +1,7 @@
 mixin skill(name, totalPoints, currentPoints)
-    tr
-        td= name
-    tr
+    div.skill
+        include ../__skill-name/skills__skill-name.pug
+        +setName(name)
         - for (var x = 0; x < currentPoints; x++)
             include ../__point/_active/skills__point_active.pug
         - for (var x = 0; x < totalPoints - currentPoints; x++)

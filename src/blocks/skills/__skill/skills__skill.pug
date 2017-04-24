@@ -1,0 +1,8 @@
+mixin skill(name, totalPoints, currentPoints)
+    tr
+        td= name
+    tr
+        - for (var x = 0; x < currentPoints; x++)
+            include ../__point/_active/skills__point_active.pug
+        - for (var x = 0; x < totalPoints - currentPoints; x++)
+            include ../__point/skills__point.pug

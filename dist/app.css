@@ -24,6 +24,7 @@
   font-family: MyriadPro-Bold, 'Arial';
   color: #006cb3;
   text-transform: uppercase;
+  width: 5em;
 }
 .contact_row {
   display: block;
@@ -127,6 +128,30 @@
 .profile {
   width: 80%;
   font-family: MyriadPro-Regular, 'Arial';
+}
+.skills__point_active {
+  background-color: #3d6cb0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 2em;
+  line-height: 40px;
+  margin-right: 1em;
+  position: relative;
+  width: 2em;
+}
+.skills_point {
+  background: #e6e6e6;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30px;
+  line-height: 40px;
+  margin-right: 15px;
+  position: relative;
+  width: 30px;
+}
+.skills__rating {
+  padding: 0;
+  margin: 0;
 }
 @font-face {
   font-family: 'MyriadPro-Bold';

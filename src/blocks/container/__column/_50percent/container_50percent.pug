@@ -1,26 +1,11 @@
 div.container_50percent
-    include ../../../note/note.pug
     
-   
-
     include ../../../annotation/annotation.pug
+
     +annotation('_education/annotation_education.png','education')
-
-
-    +note('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' +
-    'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque' + 
-    'penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,' +
-    'ultricies nec, pellentesque.')
-
-
-    +note('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' +
-'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque' + 
-'penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,' +
-'ultricies nec, pellentesque.')
-
-    +note('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' +
-'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque' + 
-'penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,' +
-'ultricies nec, pellentesque.')
+    include ../../../education/education.pug
 
     +annotation('_experience/annotation_experience.png','experience')
+    include ../../../experience/experience.pug
+
+    +annotation('_software/annotation_software.png','software')

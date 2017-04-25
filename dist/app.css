@@ -63,6 +63,67 @@
 .container__main:after {
   clear: both;
 }
+.education__date {
+  font-size: 1.3em;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.education__description {
+  display: block;
+  margin-left: 2em;
+  margin-top: 0;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.education__name {
+  text-transform: uppercase;
+  margin-left: 1.6em;
+  display: block;
+  font-size: 1.3em;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.education__node::before {
+  content: "\25CF";
+  font-size: 2em;
+  margin-right: 0.4em;
+  position: relative;
+  top: 0.15em;
+}
+.education__title {
+  text-transform: uppercase;
+  color: #006cb3;
+  font-weight: bold;
+  font-family: MyriadPro-Bold, 'Arial';
+  font-size: 1.3em;
+}
+.experience__date {
+  font-size: 1.3em;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.experience__description {
+  display: block;
+  margin-left: 2em;
+  margin-top: 0;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.experience__name {
+  text-transform: uppercase;
+  margin-left: 1.6em;
+  display: block;
+  font-size: 1.3em;
+  font-family: MyriadPro-Regular, 'Arial';
+}
+.experience__note::before {
+  content: "\25CF";
+  font-size: 2em;
+  margin-right: 0.4em;
+  position: relative;
+  top: 0.15em;
+}
+.experience__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: MyriadPro-Bold, 'Arial';
+  font-size: 1.3em;
+}
 .logo__brand {
   background-color: #006cb3;
   border-radius: 50%;
@@ -89,37 +150,6 @@
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 3.07em;
   margin-top: -0.36em;
-}
-.note__date {
-  font-size: 1.3em;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.note__description {
-  display: block;
-  margin-left: 2em;
-  margin-top: 0;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.note__title {
-  text-transform: uppercase;
-  color: #006cb3;
-  font-weight: bold;
-  font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.3em;
-}
-.note__university {
-  text-transform: uppercase;
-  margin-left: 1.6em;
-  display: block;
-  font-size: 1.3em;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.note::before {
-  content: "\25CF";
-  font-size: 2em;
-  margin-right: 0.4em;
-  position: relative;
-  top: 0.15em;
 }
 .profile_bold {
   font-family: MyriadPro-Bold, 'Arial';
@@ -156,6 +186,7 @@
   text-align: center;
   font-family: MyriadPro-Regular, 'Arial';
   margin: 2.5% auto;
+  font-size: 1.2em;
 }
 .skill {
   display: inline-block;

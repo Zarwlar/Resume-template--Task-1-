@@ -188,8 +188,30 @@
   margin: 2.5% auto;
   font-size: 1.2em;
 }
-.skill {
+.skills_skill {
   display: inline-block;
+}
+.software__product:first-child .software__progress-bar-name:first-child {
+  margin-top: 0;
+}
+.software__progress-bar-name {
+  font-size: 1.2em;
+  font-family: MyriadPro-Regular, 'Arial';
+  margin: 0.5em auto;
+}
+.software__progress-bar_points {
+  height: 1em;
+  background-color: #3d6cb0;
+  display: inline-block;
+}
+.software__progress-bar {
+  height: 1em;
+  background: #e6e6e6;
+  display: inline-block;
+  width: 18em;
+}
+.software {
+  columns: 2;
 }
 @font-face {
   font-family: 'MyriadPro-Bold';

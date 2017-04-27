@@ -1,7 +1,13 @@
 .annotation__icon {
-  display: inline-block;
-  width: 60px;
-  height: 57px;
+  min-width: 4em;
+  max-width: 5vw;
+}
+@media screen and (max-width: 48em) {
+  .annotation__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .annotation__text {
   display: inline-block;
@@ -19,6 +25,31 @@
   width: 4.21em;
   margin: 0 0.3em;
   transform: translateY(-0.29em);
+}
+@media screen and (max-width: 48em) {
+  .annotation__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .annotation__text::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.15em solid #006cb3;
+    width: 4.21em;
+    margin: 0 0.3em;
+    transform: translateY(-0.29em);
+  }
+}
+@media screen and (max-width: 24em) {
+  .annotation__text:after {
+    content: none;
+  }
+  .annotation__text:before {
+    content: none;
+  }
+  .annotation__text {
+    margin-top: 0.5em;
+  }
 }
 .contact__method {
   font-family: MyriadPro-Bold, 'Arial';
@@ -44,11 +75,23 @@
   width: 40%;
   float: left;
   font-size: 100%;
+  margin-left: 2em;
+}
+@media screen and (max-width: 50em) {
+  .container_40percent {
+    width: 100%;
+  }
 }
 .container_50percent {
-  width: 50%;
+  width: 55%;
   float: left;
   font-size: 100%;
+  margin-right: 2em;
+}
+@media screen and (max-width: 50em) {
+  .container_50percent {
+    width: 100%;
+  }
 }
 .container__main {
   width: 100%;

@@ -1,4 +1,4 @@
-$after-line-color = #006CB3;
+$line-color = #006CB3;
 
 .annotation__text 
     display: inline-block;
@@ -12,7 +12,37 @@ $after-line-color = #006CB3;
 .annotation__text::after 
     display: inline-block;
     content: "";
-    border-top: .15em solid $after-line-color;
+    border-top: .15em solid $line-color;
     width: 4.21em;
     margin: 0 0.30em;
     transform: translateY(-0.29em);
+
+@media screen and (max-width: 48em) {
+	.annotation__text {
+        margin-left: auto;
+        margin-right: auto;
+	}
+    .annotation__text::before {
+        display: inline-block;
+        content: "";
+        border-top: .15em solid $line-color;
+        width: 4.21em;
+        margin: 0 0.30em;
+        transform: translateY(-0.29em);
+    }
+}
+
+@media screen and (max-width: 24em) {
+	.annotation__text:after {
+        content: none;
+	}
+    .annotation__text:before {
+        content: none;
+	}
+    .annotation__text {
+        margin-top: 0.5em;
+    }
+}
+
+
+

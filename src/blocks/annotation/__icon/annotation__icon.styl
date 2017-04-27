@@ -1,5 +1,13 @@
 .annotation__icon 
-    display: inline-block;
-    width: 60px;
-    height: 57px; 
-    
+    min-width: 4em;
+    max-width: 5vw;
+
+
+@media screen and (max-width: 48em) {
+	.annotation__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+	}
+}
+

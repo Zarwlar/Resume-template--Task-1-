@@ -1,3 +1,27 @@
+.annotation__icon_contact {
+  height: 3em;
+  width: 3em;
+}
+.annotation__icon_education {
+  height: 3em;
+  width: 3em;
+}
+.annotation__icon_experience {
+  height: 3em;
+  width: 3em;
+}
+.annotation__icon_profile {
+  height: 3em;
+  width: 3em;
+}
+.annotation__icon_skills {
+  height: 3em;
+  width: 3em;
+}
+.annotation__icon_software {
+  height: 3em;
+  width: 3em;
+}
 .annotation__icon {
   min-width: 4em;
   max-width: 5vw;
@@ -9,6 +33,54 @@
     margin-right: auto;
   }
 }
+.annotation__text_contact::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
+.annotation__text_education::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
+.annotation__text_experience::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
+.annotation__text_profile::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
+.annotation__text_skills::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
+.annotation__text_software::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15em solid #006cb3;
+  width: 4.21em;
+  margin: 0 0.3em;
+  transform: translateY(-0.29em);
+}
 .annotation__text {
   display: inline-block;
   text-transform: uppercase;
@@ -17,39 +89,6 @@
   position: relative;
   bottom: 0.55em;
   padding-left: 0.21em;
-}
-.annotation__text::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
-}
-@media screen and (max-width: 48em) {
-  .annotation__text {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .annotation__text::before {
-    display: inline-block;
-    content: "";
-    border-top: 0.15em solid #006cb3;
-    width: 4.21em;
-    margin: 0 0.3em;
-    transform: translateY(-0.29em);
-  }
-}
-@media screen and (max-width: 24em) {
-  .annotation__text:after {
-    content: none;
-  }
-  .annotation__text:before {
-    content: none;
-  }
-  .annotation__text {
-    margin-top: 0.5em;
-  }
 }
 .contact__method {
   font-family: MyriadPro-Bold, 'Arial';
@@ -75,7 +114,7 @@
   width: 40%;
   float: left;
   font-size: 100%;
-  margin-left: 2em;
+  margin-top: 5em;
 }
 @media screen and (max-width: 50em) {
   .container_40percent {
@@ -86,7 +125,6 @@
   width: 55%;
   float: left;
   font-size: 100%;
-  margin-right: 2em;
 }
 @media screen and (max-width: 50em) {
   .container_50percent {
@@ -170,29 +208,34 @@
 .logo__brand {
   background-color: #006cb3;
   border-radius: 50%;
-  width: 10.1em;
-  height: 10.1em;
-  box-shadow: 0px 0px 0px 0.6em #fff, 0px 0px 0px 0.7em #006cb3;
-  margin-left: 5%;
+  width: 14em;
+  height: 14em;
+  box-shadow: 0px 0px 0px 0.7em #fff, 0px 0px 0px 0.8em #006cb3;
+  margin-left: 11.3em;
   margin-bottom: 2em;
-  margin-top: 2em;
+  margin-top: 1.4em;
 }
 .logo__first-name {
   text-transform: uppercase;
   font-family: MyriadPro-LightSemiExt, 'Arial';
-  font-size: 2.67em;
+  font-size: 3.67em;
 }
 .logo__specialty {
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.202em;
+  font-size: 1.634em;
   padding-left: 1.4em;
 }
 .logo__surname {
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 3.07em;
+  font-size: 4.17em;
   margin-top: -0.36em;
+}
+.logo__text {
+  margin-left: 8.8em;
+  margin-top: 2.6em;
+  margin-bottom: 5.3em;
 }
 .profile_bold {
   font-family: MyriadPro-Bold, 'Arial';

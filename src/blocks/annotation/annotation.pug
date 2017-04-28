@@ -1,8 +1,8 @@
-mixin CreateAnnotation(iconUrl, alternative, text)
+mixin CreateAnnotation(name)
     div.annotation
         include __icon/annotation__icon.pug
         include __text/annotation__text.pug 
-        +CreateAnnotationIcon(iconUrl, alternative) 
-        +CreateAnnotationText(text)
+        +CreateAnnotationIcon(name) 
+        +CreateAnnotationText(name)
         
         

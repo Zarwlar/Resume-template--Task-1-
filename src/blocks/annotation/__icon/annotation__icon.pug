@@ -1,3 +1,2 @@
-mixin CreateAnnotationIcon(iconUrl, alternative)
-    img(src='blocks/annotation/__icon/' + iconUrl, alt= alternative).annotation__icon
-     
+mixin CreateAnnotationIcon(name)
+    img(src='blocks/annotation/__icon/_' + name + '/annotation__icon_' + name + '.png', alt= name class="annotation__icon_" + name)

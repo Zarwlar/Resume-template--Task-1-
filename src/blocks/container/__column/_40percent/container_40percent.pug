@@ -1,15 +1,16 @@
 div.container_40percent
 
-    include ../../../logo/logo.pug
-    include ../../../annotation/annotation.pug
+    include ../../../person/person.pug
+    div.container__content-wrapper_left
+        include ../../../annotation/annotation.pug
 
-    +CreateAnnotation('profile')
-    include ../../../profile/profile.pug
+        +CreateAnnotation('profile')
+        include ../../../profile/profile.pug
 
-    +CreateAnnotation('contact')
-    include ../../../contact/contact.pug
+        +CreateAnnotation('contact')
+        include ../../../contact/contact.pug
 
-    +CreateAnnotation('skills')
-    include ../../../skills/skills.pug
+        +CreateAnnotation('skills')
+        include ../../../skills/skills.pug
 
     

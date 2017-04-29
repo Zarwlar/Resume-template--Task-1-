@@ -1,0 +1,8 @@
+mixin CreateName(firstName, surName, specialty)
+    div.person__name
+        include __first-name/person__first-name.pug
+        include __surname/person__surname.pug
+        include __specialty/person__specialty.pug
+        +CreateFirstName(firstName)
+        +CreateSurname(surName)
+        +CreateSpecialty(specialty)

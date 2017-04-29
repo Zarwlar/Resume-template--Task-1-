@@ -1,8 +1,11 @@
 mixin CreateAnnotation(name)
-    div.annotation
+    div(class='annotation ' + 'annotation__position_' + name)
         include __icon/annotation__icon.pug
         include __text/annotation__text.pug 
+        include __line/annotation__line.pug
+        +CreateAnnotationLine(name)
         +CreateAnnotationIcon(name) 
         +CreateAnnotationText(name)
+        
         
         

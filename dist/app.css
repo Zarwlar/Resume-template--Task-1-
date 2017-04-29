@@ -1,6 +1,8 @@
 .annotation__icon_contact {
-  height: 3em;
-  width: 3em;
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  top: 0.17rem;
 }
 .annotation__icon_education {
   height: 3em;
@@ -11,20 +13,21 @@
   width: 3em;
 }
 .annotation__icon_profile {
-  height: 3em;
-  width: 3em;
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  bottom: 0.1rem;
 }
 .annotation__icon_skills {
-  height: 3em;
-  width: 3em;
+  height: 5rem;
+  width: 5rem;
 }
 .annotation__icon_software {
   height: 3em;
   width: 3em;
 }
 .annotation__icon {
-  min-width: 4em;
-  max-width: 5vw;
+  background: #fff;
 }
 @media screen and (max-width: 48em) {
   .annotation__icon {
@@ -33,13 +36,41 @@
     margin-right: auto;
   }
 }
-.annotation__text_contact::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__line_contact {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.3rem;
+  position: absolute;
+  width: 100%;
+  top: 2.45rem;
+}
+.annotation__line_profile {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.4rem;
+  position: absolute;
+  width: 100%;
+  top: 2.11rem;
+}
+.annotation__line_skills {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.3rem;
+  position: absolute;
+  width: 100%;
+  top: 3.61rem;
+  z-index: -1;
+}
+.annotation__position_contact {
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+}
+.annotation__position_skills {
+  padding-top: 1.4rem;
+}
+.annotation__text_contact {
+  font-size: 2.79em;
+  position: relative;
+  bottom: 1.4rem;
+  padding-left: 0.65rem;
+  padding-right: 0.5rem;
 }
 .annotation__text_education::after {
   display: inline-block;
@@ -57,21 +88,19 @@
   margin: 0 0.3em;
   transform: translateY(-0.29em);
 }
-.annotation__text_profile::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__text_profile {
+  font-size: 2.79rem;
+  position: relative;
+  bottom: 1.7rem;
+  padding-left: 0.7rem;
+  padding-right: 0.55rem;
 }
-.annotation__text_skills::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__text_skills {
+  position: relative;
+  bottom: 1.7rem;
+  font-size: 2.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.9rem;
 }
 .annotation__text_software::after {
   display: inline-block;
@@ -85,36 +114,38 @@
   display: inline-block;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 2em;
+  color: #006cb3;
+  background: #fff;
+}
+.annotation {
   position: relative;
-  bottom: 0.55em;
-  padding-left: 0.21em;
 }
 .contact__method {
   font-family: MyriadPro-Bold, 'Arial';
   color: #006cb3;
   text-transform: uppercase;
-  width: 5em;
+  width: 8.5rem;
 }
 .contact_row {
   display: block;
-  word-spacing: 4em;
-  margin-bottom: 1em;
+  word-spacing: 4rem;
+  margin-bottom: 1.55rem;
+  margin-left: -0.4rem;
 }
 .contact__value {
   font-family: MyriadPro-Regular, 'Arial';
   word-spacing: normal;
-  padding-left: 2.5em;
 }
 .contact {
-  word-spacing: 4em;
-  font-size: 1.3em;
+  font-size: 1.4rem;
 }
 .container_40percent {
-  width: 40%;
+  width: 34%;
   float: left;
   font-size: 100%;
-  margin-top: 5em;
+  margin-top: 5.65em;
+  margin-left: 4%;
+  margin-bottom: 8%;
 }
 @media screen and (max-width: 50em) {
   .container_40percent {
@@ -130,6 +161,10 @@
   .container_50percent {
     width: 100%;
   }
+}
+.container__content-wrapper_left {
+  margin-top: 5.5rem;
+  margin-left: 0.3rem;
 }
 .container__main {
   width: 100%;
@@ -205,45 +240,69 @@
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.3em;
 }
-.logo__brand {
-  background-color: #006cb3;
-  border-radius: 50%;
-  width: 14em;
-  height: 14em;
-  box-shadow: 0px 0px 0px 0.7em #fff, 0px 0px 0px 0.8em #006cb3;
-  margin-left: 11.3em;
-  margin-bottom: 2em;
-  margin-top: 1.4em;
-}
-.logo__first-name {
+.person__first-name {
   text-transform: uppercase;
   font-family: MyriadPro-LightSemiExt, 'Arial';
-  font-size: 3.67em;
+  font-size: 3.67rem;
+  position: relative;
+  top: 1.65rem;
 }
-.logo__specialty {
+.person__specialty {
+  position: relative;
+  top: 0.15em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.634em;
-  padding-left: 1.4em;
+  font-size: 1.634rem;
 }
-.logo__surname {
+.person__surname {
+  position: relative;
+  top: 0.05em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 4.17em;
-  margin-top: -0.36em;
+  font-size: 4.17rem;
 }
-.logo__text {
-  margin-left: 8.8em;
-  margin-top: 2.6em;
-  margin-bottom: 5.3em;
+.person__name {
+  margin-left: 1.5rem;
 }
-.profile_bold {
+.person__photo-frame {
+  position: relative;
+  border: 2px solid #3d6cb0;
+  border-radius: 50%;
+  max-width: 15.4rem;
+  margin: 0 auto;
+  left: 0.8rem;
+  bottom: 0.1rem;
+}
+.person__photo-frame:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.person__photo {
+  background-color: #006cb3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 90%;
+  margin: 5%;
+}
+.person__photo:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.person {
+  text-align: center;
+}
+.profile__text_bold {
   font-family: MyriadPro-Bold, 'Arial';
-  width: 80%;
+  font-size: 1.05em;
+  line-height: 1.2em;
 }
-.profile {
-  width: 80%;
+.profile__text_normal {
   font-family: MyriadPro-Regular, 'Arial';
+  font-size: 1.05em;
 }
 .skills__list {
   padding: 0;
@@ -252,30 +311,46 @@
 }
 .skills__point_active {
   background-color: #3d6cb0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 1em;
-  margin-right: 0.5em;
-  position: relative;
-  width: 1em;
 }
-.skills_point {
+.skills__point_passive {
   background: #e6e6e6;
+}
+.skills__point {
   border-radius: 50%;
   display: inline-block;
-  height: 1em;
-  margin-right: 0.5em;
+  height: 1.2rem;
+  margin-right: 0.68em;
   position: relative;
-  width: 1em;
+  width: 1.2rem;
+  left: 0.2rem;
 }
 .skills__skill-name {
   text-align: center;
   font-family: MyriadPro-Regular, 'Arial';
   margin: 2.5% auto;
-  font-size: 1.2em;
+  font-size: 1.75rem;
 }
-.skills_skill {
-  display: inline-block;
+.skills__skill_position-communication {
+  top: 0.8rem;
+  right: 0.6rem;
+}
+.skills__skill_position-creative {
+  right: 0.6rem;
+}
+.skills__skill_position-innovate {
+  top: 0.6rem;
+  right: 0.7rem;
+}
+.skills__skill_position-teamwork {
+  top: 0.4rem;
+  right: 0.6rem;
+}
+.skills__skill {
+  position: relative;
+  text-transform: uppercase;
+}
+.skills {
+  text-align: center;
 }
 .software__product:first-child .software__progress-bar-name:first-child {
   margin-top: 0;

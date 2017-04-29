@@ -1,7 +1,6 @@
-mixin CreateContactRow(method, value)
-    tr.contact_row
+mixin CreateContactRow(method, value, padding_left)
+    tr(class="contact_row")
         td.contact__method= method
         td.contact__value= value
-    tr
-
+        //- td(class="contact__value" style="padding-left: " + padding_left + "rem;")= value
 

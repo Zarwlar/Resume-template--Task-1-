@@ -1,19 +1,19 @@
 .annotation__icon_contact {
-  position: relative;
   height: 5rem;
   width: 5rem;
   top: 0.17rem;
 }
 .annotation__icon_education {
-  height: 3em;
-  width: 3em;
+  height: 5rem;
+  width: 5rem;
+  bottom: 0.1rem;
+  padding-left: 0.4rem;
 }
 .annotation__icon_experience {
-  height: 3em;
-  width: 3em;
+  height: 5rem;
+  width: 5rem;
 }
 .annotation__icon_profile {
-  position: relative;
   height: 5rem;
   width: 5rem;
   bottom: 0.1rem;
@@ -28,13 +28,7 @@
 }
 .annotation__icon {
   background: #fff;
-}
-@media screen and (max-width: 48em) {
-  .annotation__icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  position: relative;
 }
 .annotation__line_contact {
   background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
@@ -42,6 +36,22 @@
   position: absolute;
   width: 100%;
   top: 2.45rem;
+}
+.annotation__line_education {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.3rem;
+  position: absolute;
+  width: 100%;
+  top: 2.21rem;
+  z-index: -1;
+}
+.annotation__line_experience {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.3rem;
+  position: absolute;
+  width: 100%;
+  top: 2.4rem;
+  z-index: -1;
 }
 .annotation__line_profile {
   background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
@@ -55,15 +65,23 @@
   height: 0.3rem;
   position: absolute;
   width: 100%;
-  top: 3.61rem;
+  top: 2.21rem;
   z-index: -1;
 }
 .annotation__position_contact {
   margin-top: 3rem;
   margin-bottom: 1.2rem;
 }
+.annotation__position_education {
+  bottom: 1rem;
+  right: 1rem;
+  margin-bottom: 0.8%;
+}
+.annotation__position_experience {
+  margin-left: 1rem;
+}
 .annotation__position_skills {
-  padding-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 .annotation__text_contact {
   font-size: 2.79em;
@@ -72,21 +90,19 @@
   padding-left: 0.65rem;
   padding-right: 0.5rem;
 }
-.annotation__text_education::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__text_education {
+  font-size: 2.79rem;
+  position: relative;
+  bottom: 1.7rem;
+  padding-left: 1.2rem;
+  padding-right: 0.65rem;
 }
-.annotation__text_experience::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__text_experience {
+  position: relative;
+  bottom: 1.5rem;
+  padding-left: 1.2rem;
+  padding-right: 0.1rem;
+  font-size: 2.8rem;
 }
 .annotation__text_profile {
   font-size: 2.79rem;
@@ -143,9 +159,9 @@
   width: 34%;
   float: left;
   font-size: 100%;
-  margin-top: 5.65em;
+  margin-top: 6.8%;
   margin-left: 4%;
-  margin-bottom: 8%;
+  margin-bottom: 7.7%;
 }
 @media screen and (max-width: 50em) {
   .container_40percent {
@@ -153,9 +169,11 @@
   }
 }
 .container_50percent {
-  width: 55%;
+  width: 53%;
   float: left;
   font-size: 100%;
+  margin-top: 6.8%;
+  margin-left: 6%;
 }
 @media screen and (max-width: 50em) {
   .container_50percent {
@@ -165,6 +183,9 @@
 .container__content-wrapper_left {
   margin-top: 5.5rem;
   margin-left: 0.3rem;
+}
+.container__content-wrapper_right {
+  margin-left: 2%;
 }
 .container__main {
   width: 100%;
@@ -180,35 +201,41 @@
   clear: both;
 }
 .education__date {
-  font-size: 1.3em;
+  font-size: 1.75rem;
   font-family: MyriadPro-Regular, 'Arial';
+  margin-left: 1rem;
 }
 .education__description {
   display: block;
-  margin-left: 2em;
-  margin-top: 0;
+  margin-left: 3.1rem;
+  margin-right: 2rem;
+  margin-top: 0.4rem;
+  font-size: 1.05rem;
   font-family: MyriadPro-Regular, 'Arial';
 }
 .education__name {
   text-transform: uppercase;
-  margin-left: 1.6em;
+  margin-left: 2.85rem;
   display: block;
-  font-size: 1.3em;
+  font-size: 1.77rem;
   font-family: MyriadPro-Regular, 'Arial';
 }
-.education__node::before {
+.education__note {
+  margin-top: -3.5%;
+}
+.education__note::before {
   content: "\25CF";
-  font-size: 2em;
-  margin-right: 0.4em;
+  font-size: 3rem;
+  margin-right: 1.1rem;
   position: relative;
-  top: 0.15em;
+  top: 0.35rem;
 }
 .education__title {
   text-transform: uppercase;
   color: #006cb3;
   font-weight: bold;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.3em;
+  font-size: 1.75rem;
 }
 .experience__date {
   font-size: 1.3em;
@@ -229,7 +256,7 @@
 }
 .experience__note::before {
   content: "\25CF";
-  font-size: 2em;
+  font-size: 3em;
   margin-right: 0.4em;
   position: relative;
   top: 0.15em;
@@ -297,12 +324,12 @@
 }
 .profile__text_bold {
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.05em;
-  line-height: 1.2em;
+  font-size: 1.05rem;
+  line-height: 1.2rem;
 }
 .profile__text_normal {
   font-family: MyriadPro-Regular, 'Arial';
-  font-size: 1.05em;
+  font-size: 1.05rem;
 }
 .skills__list {
   padding: 0;

@@ -1,12 +1,12 @@
 div.container_50percent
-    
-    include ../../../annotation/annotation.pug
+    div.container__content-wrapper_right
+        include ../../../annotation/annotation.pug
 
-    +CreateAnnotation('education')
-    include ../../../education/education.pug
+        +CreateAnnotation('education')
+        include ../../../education/education.pug
 
-    +CreateAnnotation('experience')
-    include ../../../experience/experience.pug
+        +CreateAnnotation('experience')
+        include ../../../experience/experience.pug
 
-    +CreateAnnotation('software')
-    include ../../../software/software.pug
+        +CreateAnnotation('software')
+        include ../../../software/software.pug

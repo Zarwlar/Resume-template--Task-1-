@@ -7,7 +7,7 @@
   height: 5rem;
   width: 5rem;
   bottom: 0.1rem;
-  padding-left: 0.4rem;
+  padding-left: 1.2%;
 }
 .annotation__icon_experience {
   height: 5rem;
@@ -50,7 +50,7 @@
   height: 0.3rem;
   position: absolute;
   width: 100%;
-  top: 2.4rem;
+  top: 2.3rem;
   z-index: -1;
 }
 .annotation__line_profile {
@@ -69,8 +69,8 @@
   z-index: -1;
 }
 .annotation__position_contact {
-  margin-top: 3rem;
-  margin-bottom: 1.2rem;
+  margin-top: 10.5%;
+  margin-bottom: 4.4%;
 }
 .annotation__position_education {
   bottom: 1rem;
@@ -78,24 +78,26 @@
   margin-bottom: 0.8%;
 }
 .annotation__position_experience {
-  margin-left: 1rem;
+  margin-top: 8.4%;
+  margin-left: -1%;
+  margin-bottom: 5.6%;
 }
 .annotation__position_skills {
-  margin-top: 1.4rem;
+  margin-top: 4.8%;
 }
 .annotation__text_contact {
   font-size: 2.79em;
   position: relative;
   bottom: 1.4rem;
-  padding-left: 0.65rem;
-  padding-right: 0.5rem;
+  padding-left: 2.5%;
+  padding-right: 1.5%;
 }
 .annotation__text_education {
   font-size: 2.79rem;
   position: relative;
   bottom: 1.7rem;
-  padding-left: 1.2rem;
-  padding-right: 0.65rem;
+  padding-left: 2.8%;
+  padding-right: 1.4%;
 }
 .annotation__text_experience {
   position: relative;
@@ -108,15 +110,15 @@
   font-size: 2.79rem;
   position: relative;
   bottom: 1.7rem;
-  padding-left: 0.7rem;
-  padding-right: 0.55rem;
+  padding-left: 2.5%;
+  padding-right: 2%;
 }
 .annotation__text_skills {
   position: relative;
   bottom: 1.7rem;
   font-size: 2.8rem;
-  padding-left: 0.5rem;
-  padding-right: 0.9rem;
+  padding-left: 1.8%;
+  padding-right: 3.3%;
 }
 .annotation__text_software::after {
   display: inline-block;
@@ -145,8 +147,8 @@
 .contact_row {
   display: block;
   word-spacing: 4rem;
-  margin-bottom: 1.55rem;
-  margin-left: -0.4rem;
+  margin-bottom: 7.15%;
+  margin-left: -1.5%;
 }
 .contact__value {
   font-family: MyriadPro-Regular, 'Arial';
@@ -163,9 +165,10 @@
   margin-left: 4%;
   margin-bottom: 7.7%;
 }
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 55em) {
   .container_40percent {
     width: 100%;
+    margin-left: 0;
   }
 }
 .container_50percent {
@@ -175,21 +178,21 @@
   margin-top: 6.8%;
   margin-left: 6%;
 }
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 55em) {
   .container_50percent {
     width: 100%;
+    margin-left: 0;
   }
 }
 .container__content-wrapper_left {
-  margin-top: 5.5rem;
-  margin-left: 0.3rem;
+  margin-top: 19.5%;
+  margin-left: 1%;
 }
 .container__content-wrapper_right {
   margin-left: 2%;
 }
 .container__main {
   width: 100%;
-  max-width: 100em;
   position: relative;
 }
 .container__main:after,
@@ -200,72 +203,50 @@
 .container__main:after {
   clear: both;
 }
-.education__date {
-  font-size: 1.75rem;
-  font-family: MyriadPro-Regular, 'Arial';
-  margin-left: 1rem;
+@media screen and (max-width: 55em) {
+  html {
+    font-size: 12px;
+  }
 }
-.education__description {
+.education__title_color-blue {
+  color: #006cb3;
+}
+.note__date {
+  font-size: 1.75em;
+  font-family: MyriadPro-Regular, 'Arial';
+  margin-left: 2.4%;
+}
+.note__description {
   display: block;
-  margin-left: 3.1rem;
-  margin-right: 2rem;
-  margin-top: 0.4rem;
+  margin-left: 7.1%;
+  margin-top: 1%;
+  margin-right: 5%;
   font-size: 1.05rem;
   font-family: MyriadPro-Regular, 'Arial';
 }
-.education__name {
-  text-transform: uppercase;
-  margin-left: 2.85rem;
-  display: block;
-  font-size: 1.77rem;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.education__note {
-  margin-top: -3.5%;
-}
-.education__note::before {
-  content: "\25CF";
-  font-size: 3rem;
-  margin-right: 1.1rem;
-  position: relative;
-  top: 0.35rem;
-}
-.education__title {
-  text-transform: uppercase;
-  color: #006cb3;
-  font-weight: bold;
-  font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.75rem;
-}
-.experience__date {
-  font-size: 1.3em;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.experience__description {
-  display: block;
-  margin-left: 2em;
-  margin-top: 0;
-  font-family: MyriadPro-Regular, 'Arial';
-}
-.experience__name {
+.note__place {
   text-transform: uppercase;
   margin-left: 1.6em;
   display: block;
-  font-size: 1.3em;
+  font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
 }
-.experience__note::before {
-  content: "\25CF";
-  font-size: 3em;
-  margin-right: 0.4em;
-  position: relative;
-  top: 0.15em;
+.note__position {
+  margin-top: -3.9%;
+  margin-bottom: 2.5%;
 }
-.experience__title {
+.note__title {
   text-transform: uppercase;
   font-weight: bold;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.3em;
+  font-size: 1.75em;
+}
+.note::before {
+  content: "\25CF";
+  font-size: 3.1em;
+  margin-right: 2.2%;
+  position: relative;
+  top: 0.15em;
 }
 .person__first-name {
   text-transform: uppercase;
@@ -346,7 +327,7 @@
   border-radius: 50%;
   display: inline-block;
   height: 1.2rem;
-  margin-right: 0.68em;
+  margin-right: 2.5%;
   position: relative;
   width: 1.2rem;
   left: 0.2rem;

@@ -1,3 +1,9 @@
 .software {
-    columns: 2;
+    display: flex;
+}
+
+@media screen and (max-width: 30em) {
+	.software {
+        flex-direction: column;
+    }
 }

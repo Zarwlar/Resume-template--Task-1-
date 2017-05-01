@@ -23,8 +23,8 @@
   width: 5rem;
 }
 .annotation__icon_software {
-  height: 3em;
-  width: 3em;
+  height: 5em;
+  width: 5em;
 }
 .annotation__icon {
   background: #fff;
@@ -50,7 +50,7 @@
   height: 0.3rem;
   position: absolute;
   width: 100%;
-  top: 2.3rem;
+  top: 2.25rem;
   z-index: -1;
 }
 .annotation__line_profile {
@@ -66,6 +66,14 @@
   position: absolute;
   width: 100%;
   top: 2.21rem;
+  z-index: -1;
+}
+.annotation__line_software {
+  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
+  height: 0.4rem;
+  position: absolute;
+  width: 100%;
+  top: 2.31rem;
   z-index: -1;
 }
 .annotation__position_contact {
@@ -85,6 +93,10 @@
 .annotation__position_skills {
   margin-top: 4.8%;
 }
+.annotation__position_software {
+  margin-top: 8.2%;
+  margin-left: -1.2%;
+}
 .annotation__text_contact {
   font-size: 2.79em;
   position: relative;
@@ -101,9 +113,9 @@
 }
 .annotation__text_experience {
   position: relative;
-  bottom: 1.5rem;
-  padding-left: 1.2rem;
-  padding-right: 0.1rem;
+  bottom: 1.6rem;
+  padding-left: 2.7%;
+  padding-right: 0.2%;
   font-size: 2.8rem;
 }
 .annotation__text_profile {
@@ -120,13 +132,12 @@
   padding-left: 1.8%;
   padding-right: 3.3%;
 }
-.annotation__text_software::after {
-  display: inline-block;
-  content: "";
-  border-top: 0.15em solid #006cb3;
-  width: 4.21em;
-  margin: 0 0.3em;
-  transform: translateY(-0.29em);
+.annotation__text_software {
+  position: relative;
+  bottom: 1.5rem;
+  padding-left: 2.8%;
+  padding-right: 3.6%;
+  font-size: 2.8rem;
 }
 .annotation__text {
   display: inline-block;
@@ -216,6 +227,11 @@
   font-family: MyriadPro-Regular, 'Arial';
   margin-left: 2.4%;
 }
+@media screen and (max-width: 55em) {
+  .note__date {
+    font-size: 1.45rem;
+  }
+}
 .note__description {
   display: block;
   margin-left: 7.1%;
@@ -226,10 +242,15 @@
 }
 .note__place {
   text-transform: uppercase;
-  margin-left: 1.6em;
+  margin-left: 6.6%;
   display: block;
   font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
+}
+@media screen and (max-width: 55em) {
+  .note__place {
+    font-size: 1.45rem;
+  }
 }
 .note__position {
   margin-top: -3.9%;
@@ -239,7 +260,12 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: MyriadPro-Bold, 'Arial';
-  font-size: 1.75em;
+  font-size: 1.75rem;
+}
+@media screen and (max-width: 55em) {
+  .note__title {
+    font-size: 1.45rem;
+  }
 }
 .note::before {
   content: "\25CF";
@@ -247,6 +273,11 @@
   margin-right: 2.2%;
   position: relative;
   top: 0.15em;
+}
+@media screen and (max-width: 55em) {
+  .note::before {
+    font-size: 2.1em;
+  }
 }
 .person__first-name {
   text-transform: uppercase;
@@ -270,7 +301,12 @@
   font-size: 4.17rem;
 }
 .person__name {
-  margin-left: 1.5rem;
+  margin-left: 5.5%;
+}
+@media screen and (max-width: 55em) {
+  .person__name {
+    margin-left: 0;
+  }
 }
 .person__photo-frame {
   position: relative;
@@ -285,6 +321,11 @@
   content: "";
   display: block;
   padding-top: 100%;
+}
+@media screen and (max-width: 55em) {
+  .person__photo-frame {
+    left: 0;
+  }
 }
 .person__photo {
   background-color: #006cb3;
@@ -360,27 +401,37 @@
 .skills {
   text-align: center;
 }
-.software__product:first-child .software__progress-bar-name:first-child {
-  margin-top: 0;
+.software__column {
+  width: 50%;
+  margin-right: 6.5%;
+  padding-right: 4.3%;
+}
+.software__product {
+  margin-bottom: 6.7%;
 }
 .software__progress-bar-name {
-  font-size: 1.2em;
+  font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
   margin: 0.5em auto;
 }
 .software__progress-bar_points {
-  height: 1em;
+  height: 1.45em;
   background-color: #3d6cb0;
   display: inline-block;
 }
 .software__progress-bar {
-  height: 1em;
+  height: 1.45em;
   background: #e6e6e6;
   display: inline-block;
-  width: 18em;
+  width: 18.85em;
 }
 .software {
-  columns: 2;
+  display: flex;
+}
+@media screen and (max-width: 30em) {
+  .software {
+    flex-direction: column;
+  }
 }
 @font-face {
   font-family: 'MyriadPro-Bold';

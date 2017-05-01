@@ -1,9 +1,11 @@
 include __product/software__product.pug
 
 div.software
-    +CreateProduct('PHOTOSHOP', 17)
-    +CreateProduct('ILLUSTRATOR', 12)
-    +CreateProduct('INDESIGN', 10)
-    +CreateProduct('DREAMWEAVER', 16)
-    +CreateProduct('AFTER EFFECTS', 11)
-    +CreateProduct('HTML&CSS3', 17)
+    div.software__column
+        +CreateProduct('PHOTOSHOP', 17.2)
+        +CreateProduct('ILLUSTRATOR', 13.3)
+        +CreateProduct('INDESIGN', 10.6)
+    div.software__column
+        +CreateProduct('DREAMWEAVER', 15.5)
+        +CreateProduct('AFTER EFFECTS', 11.5)
+        +CreateProduct('HTML&CSS3', 17)

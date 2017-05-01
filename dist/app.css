@@ -1,80 +1,43 @@
 .annotation__icon_contact {
-  height: 5rem;
-  width: 5rem;
   top: 0.17rem;
 }
 .annotation__icon_education {
-  height: 5rem;
-  width: 5rem;
   bottom: 0.1rem;
   padding-left: 1.2%;
 }
-.annotation__icon_experience {
-  height: 5rem;
-  width: 5rem;
-}
 .annotation__icon_profile {
-  height: 5rem;
-  width: 5rem;
   bottom: 0.1rem;
-}
-.annotation__icon_skills {
-  height: 5rem;
-  width: 5rem;
-}
-.annotation__icon_software {
-  height: 5em;
-  width: 5em;
 }
 .annotation__icon {
   background: #fff;
   position: relative;
+  height: 5em;
+  width: 5em;
 }
 .annotation__line_contact {
-  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.3rem;
-  position: absolute;
-  width: 100%;
   top: 2.45rem;
 }
 .annotation__line_education {
-  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.3rem;
-  position: absolute;
-  width: 100%;
   top: 2.21rem;
-  z-index: -1;
 }
 .annotation__line_experience {
-  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.3rem;
-  position: absolute;
-  width: 100%;
   top: 2.25rem;
-  z-index: -1;
 }
 .annotation__line_profile {
-  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.4rem;
-  position: absolute;
-  width: 100%;
   top: 2.11rem;
 }
 .annotation__line_skills {
-  background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.3rem;
-  position: absolute;
-  width: 100%;
   top: 2.21rem;
-  z-index: -1;
 }
 .annotation__line_software {
+  top: 2.31rem;
+}
+.annotation__line {
   background-image: linear-gradient(to left, #3d6cb0, #3d6cb0);
-  height: 0.4rem;
   position: absolute;
   width: 100%;
-  top: 2.31rem;
   z-index: -1;
+  height: 0.4rem;
 }
 .annotation__position_contact {
   margin-top: 10.5%;
@@ -98,51 +61,41 @@
   margin-left: -1.2%;
 }
 .annotation__text_contact {
-  font-size: 2.79em;
-  position: relative;
   bottom: 1.4rem;
   padding-left: 2.5%;
   padding-right: 1.5%;
 }
 .annotation__text_education {
-  font-size: 2.79rem;
-  position: relative;
   bottom: 1.7rem;
   padding-left: 2.8%;
   padding-right: 1.4%;
 }
 .annotation__text_experience {
-  position: relative;
   bottom: 1.6rem;
   padding-left: 2.7%;
   padding-right: 0.2%;
-  font-size: 2.8rem;
 }
 .annotation__text_profile {
-  font-size: 2.79rem;
-  position: relative;
   bottom: 1.7rem;
   padding-left: 2.5%;
   padding-right: 2%;
 }
 .annotation__text_skills {
-  position: relative;
   bottom: 1.7rem;
-  font-size: 2.8rem;
   padding-left: 1.8%;
   padding-right: 3.3%;
 }
 .annotation__text_software {
-  position: relative;
   bottom: 1.5rem;
   padding-left: 2.8%;
   padding-right: 3.6%;
-  font-size: 2.8rem;
 }
 .annotation__text {
   display: inline-block;
+  position: relative;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
+  font-size: 2.79rem;
   color: #006cb3;
   background: #fff;
 }
@@ -163,36 +116,38 @@
 }
 .contact__value {
   font-family: MyriadPro-Regular, 'Arial';
-  word-spacing: normal;
 }
 .contact {
   font-size: 1.4rem;
 }
-.container_40percent {
-  width: 34%;
+.container_left {
   float: left;
+  width: 34%;
   font-size: 100%;
   margin-top: 6.8%;
   margin-left: 4%;
   margin-bottom: 7.7%;
+  min-width: 22.5rem;
 }
-@media screen and (max-width: 55em) {
-  .container_40percent {
+@media screen and (max-width: 66em) {
+  .container_left {
     width: 100%;
     margin-left: 0;
   }
 }
-.container_50percent {
+.container_right {
   width: 53%;
   float: left;
   font-size: 100%;
   margin-top: 6.8%;
   margin-left: 6%;
+  min-width: 35rem;
 }
-@media screen and (max-width: 55em) {
-  .container_50percent {
+@media screen and (max-width: 66em) {
+  .container_right {
     width: 100%;
     margin-left: 0;
+    min-width: 0;
   }
 }
 .container__content-wrapper_left {
@@ -283,18 +238,15 @@
   text-transform: uppercase;
   font-family: MyriadPro-LightSemiExt, 'Arial';
   font-size: 3.67rem;
-  position: relative;
   top: 1.65rem;
 }
 .person__specialty {
-  position: relative;
   top: 0.15em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.634rem;
 }
 .person__surname {
-  position: relative;
   top: 0.05em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
@@ -302,6 +254,7 @@
 }
 .person__name {
   margin-left: 5.5%;
+  position: relative;
 }
 @media screen and (max-width: 55em) {
   .person__name {
@@ -404,7 +357,8 @@
 .software__column {
   width: 50%;
   margin-right: 6.5%;
-  padding-right: 4.3%;
+  padding-right: 4.8%;
+  margin-left: -0.3%;
 }
 .software__product {
   margin-bottom: 6.7%;

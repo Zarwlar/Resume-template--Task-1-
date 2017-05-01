@@ -168,6 +168,10 @@
 .container__main:after {
   clear: both;
 }
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 55em) {
   html {
     font-size: 12px;
@@ -238,22 +242,24 @@
   font-family: MyriadPro-LightSemiExt, 'Arial';
   font-size: 3.67rem;
   top: 1.65rem;
+  position: relative;
 }
 .person__specialty {
   top: 0.15em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.634rem;
+  position: relative;
 }
 .person__surname {
   top: 0.05em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 4.17rem;
+  position: relative;
 }
 .person__name {
   margin-left: 5.5%;
-  position: relative;
 }
 @media screen and (max-width: 55em) {
   .person__name {

@@ -7,12 +7,6 @@ include ../education/education.pug
 include ../experience/experience.pug
 include ../software/software.pug
 
-mixin container__main()
-	div.container__main.pug
-		+container__column_left()
-		+container__column_right()
-
-
 mixin container__column_left()
 	div.container__column_left
 		+person()
@@ -34,6 +28,8 @@ mixin container__column_right()
 
 mixin container()
 	div.container
-		+container__main()
+			div.container__main.pug
+				+container__column_left()
+				+container__column_right()
 
 +container()

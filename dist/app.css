@@ -21,7 +21,7 @@
   position: absolute;
   width: 100%;
   z-index: -1;
-  height: 0.4rem;
+  height: 0.3rem;
 }
 .annotation {
   position: relative;
@@ -107,13 +107,11 @@
 .contact__value {
   font-family: MyriadPro-Regular, 'Arial';
 }
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-}
 .container__main {
   width: 100%;
   position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 .container__main:after,
 .container__main:before {
@@ -129,7 +127,7 @@
   font-size: 100%;
   margin-top: 6.8%;
   margin-left: 4.3%;
-  margin-bottom: 7.7%;
+  margin-bottom: 6.7%;
   min-width: 22.5rem;
 }
 .container__column_right {

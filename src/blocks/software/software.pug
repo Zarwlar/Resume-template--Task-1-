@@ -1,11 +1,23 @@
-include __product/software__product.pug
 
-div.software
-    div.software__column
-        +CreateProduct('PHOTOSHOP', 17.2)
-        +CreateProduct('ILLUSTRATOR', 13.3)
-        +CreateProduct('INDESIGN', 10.6)
-    div.software__column
-        +CreateProduct('DREAMWEAVER', 15.5)
-        +CreateProduct('AFTER EFFECTS', 11.5)
-        +CreateProduct('HTML&CSS3', 17)
+mixin software__progress-bar(value)
+	div.software__progress-bar
+		div.software__progress-bar_points(style= 'width: ' +value+ 'em')
+
+mixin software__progress-bar-name(name)
+	div.software__progress-bar-name= name
+
+mixin software__product(name, value)
+	div.software__product
+		+software__progress-bar-name(name)
+		+software__progress-bar(value)
+
+mixin software()
+	div.software
+		div.software__column
+			+software__product('PHOTOSHOP', 17.2)
+			+software__product('ILLUSTRATOR', 13.3)
+			+software__product('INDESIGN', 10.6)
+		div.software__column
+			+software__product('DREAMWEAVER', 15.5)
+			+software__product('AFTER EFFECTS', 11.5)
+			+software__product('HTML&CSS3', 17)

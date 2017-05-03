@@ -1,11 +1,14 @@
-mixin CreateAnnotation(name)
+mixin annotation__text(text)
+    div(class='annotation__text annotation__text_' + text)= text 
+
+mixin annotation__line(name)
+    div(class='annotation__line annotation__line_' + name)
+
+mixin annotation__icon(name)
+    img(src= 'blocks/annotation/__icon/_' + name + '/annotation__icon_' + name + '.png', alt= name class= "annotation__icon")
+
+mixin annotation(name)
     div(class='annotation ' + 'annotation__position_' + name)
-        include __icon/annotation__icon.pug
-        include __text/annotation__text.pug 
-        include __line/annotation__line.pug
-        +CreateAnnotationIcon(name) 
-        +CreateAnnotationLine(name)
-        +CreateAnnotationText(name)
-        
-        
-        
+        +annotation__icon(name) 
+        +annotation__line(name)
+        +annotation__text(name)

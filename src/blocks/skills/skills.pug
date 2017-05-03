@@ -1,2 +1,28 @@
-div.skills
-    include __list/skills__list.pug
+mixin skills__skill-name(name)
+	div.skills__skill-name= name
+
+mixin skills__point(mode)
+	li(class='skills__point skills__point_' + mode)
+
+mixin skill(name, totalPoints, currentPoints)
+	div.skills__skill
+		+skills__skill-name(name)
+		- for (var x = 0; x < currentPoints; x++)
+				+skills__point('active')
+		- for (var x = 0; x < totalPoints - currentPoints; x++)
+				+skills__point('passive')
+
+mixin skills__list()
+	ul.skills__list
+		+skill('creative', 12, 9)
+	ul.skills__list
+		+skill('teamwork', 12, 11)
+	ul.skills__list
+		+skill('innovate', 12, 6)
+	ul.skills__list
+		+skill('communication', 12, 11)
+
+mixin skills()
+	div.skills
+		+skills__list()
+

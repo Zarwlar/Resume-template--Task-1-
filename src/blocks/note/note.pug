@@ -1,15 +1,11 @@
-mixin CreateNote(title, date, place, desc, title_style)
-    div(class='note note__position')
-        - if (typeof(title_style) !== 'undefined'){
-            span(class='note__title ' +title_style)=title
-            -}
-        -else {
-            span.note__title= title
-        -}
-            span.note__date= date
-            span.note__place= place
-            p.note__description= desc
-
-
-       
-    
+mixin note(title, date, place, desc, title_style)
+	div(class='note note__position')
+		- if (typeof(title_style) !== 'undefined'){
+			span(class='note__title ' +title_style)=title
+		-}
+		-else {
+			span.note__title= title
+		-}
+			span.note__date= date
+			span.note__place= place
+			p.note__description= desc

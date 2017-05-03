@@ -1,2 +1,39 @@
-div.container
-    include __main/container__main.pug
+include ../annotation/annotation.pug
+include ../person/person.pug
+include ../profile/profile.pug
+include ../contact/contact.pug
+include ../skills/skills.pug
+include ../education/education.pug
+include ../experience/experience.pug
+include ../software/software.pug
+
+mixin container__main()
+	div.container__main.pug
+		+container__column_left()
+		+container__column_right()
+
+
+mixin container__column_left()
+	div.container__column_left
+		+person()
+		+annotation('profile')
+		+profile()
+		+annotation('contact')
+		+contact()
+		+annotation('skills')
+		+skills()
+
+mixin container__column_right()
+	div.container__column_right
+		+annotation('education')
+		+education()
+		+annotation('experience')
+		+experience()
+		+annotation('software')
+		+software()
+
+mixin container()
+	div.container
+		+container__main()
+
++container()

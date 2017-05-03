@@ -1,7 +1,12 @@
-include __row/contact__row.pug
 
-table.contact
-    +CreateContactRow('address','Main Street, City.')
-    +CreateContactRow('e-mail','contact@domain.com','5')
-    +CreateContactRow('phone','555-555-555')
-    +CreateContactRow('website','www.yourweb.com')
+mixin contact__row(method, value, padding_left)
+	tr(class="contact__row")
+		td.contact__method= method
+		td.contact__value= value
+
+mixin contact()
+	table.contact
+		+contact__row('address','Main Street, City.')
+		+contact__row('e-mail','contact@domain.com','5')
+		+contact__row('phone','555-555-555')
+		+contact__row('website','www.yourweb.com')

@@ -1,8 +1,0 @@
-mixin CreateSkill(name, totalPoints, currentPoints)
-    div(class='skills__skill ' + 'skills__skill_position-' + name)
-        include ../__skill-name/skills__skill-name.pug
-        +CreateName(name)
-        - for (var x = 0; x < currentPoints; x++)
-            include ../__point/_active/skills__point_active.pug
-        - for (var x = 0; x < totalPoints - currentPoints; x++)
-            include ../__point/_passive/skills__point_passive.pug

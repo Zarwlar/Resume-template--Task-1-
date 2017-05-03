@@ -1,21 +1,4 @@
-
-mixin skill(name, totalPoints, currentPoints)
-	div.skills__skill
-		div.skills__skill-name= name
-		- for (var x = 0; x < currentPoints; x++)
-				li(class='skills__point skills__point_active')
-		- for (var x = 0; x < totalPoints - currentPoints; x++)
-				li(class='skills__point skills__point_passive')
-
-mixin skills__list()
-	ul.skills__list
-		+skill('creative', 12, 9)
-	ul.skills__list
-		+skill('teamwork', 12, 11)
-	ul.skills__list
-		+skill('innovate', 12, 6)
-	ul.skills__list
-		+skill('communication', 12, 11)
+include ./skills__list.pug
 
 mixin skills()
 	div.skills

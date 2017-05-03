@@ -1,14 +1,6 @@
-mixin annotation__text(text)
-    div(class='annotation__text annotation__text_' + text)= text 
-
-mixin annotation__line(name)
-    div(class='annotation__line annotation__line_' + name)
-
-mixin annotation__icon(name)
-    img(src= 'blocks/annotation/__icon/_' + name + '/annotation__icon_' + name + '.png', alt= name class= "annotation__icon")
 
 mixin annotation(name)
-    div(class='annotation ' + 'annotation__position_' + name)
-        +annotation__icon(name) 
-        +annotation__line(name)
-        +annotation__text(name)
+	div(class='annotation ' + 'annotation__position_' + name)
+		img(src= 'blocks/annotation/__icon/_' + name + '/annotation__icon_' + name + '.png', alt= name class= "annotation__icon")
+		div(class='annotation__line annotation__line_' + name)
+		div(class='annotation__text annotation__text_' + name)= name 

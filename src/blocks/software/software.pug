@@ -1,15 +1,9 @@
 
-mixin software__progress-bar(value)
-	div.software__progress-bar
-		div.software__progress-bar_points(style= 'width: ' +value+ 'em')
-
-mixin software__progress-bar-name(name)
-	div.software__progress-bar-name= name
-
 mixin software__product(name, value)
 	div.software__product
-		+software__progress-bar-name(name)
-		+software__progress-bar(value)
+		div.software__progress-bar-name= name
+		div.software__progress-bar
+			div.software__progress-bar_points(style= 'width: ' +value+ 'em')
 
 mixin software()
 	div.software

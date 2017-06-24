@@ -1,46 +1,49 @@
 .note
-	&::before 
-		content: "●";
-		font-size: 3.1em;
-		margin-right: 2.2%;
-		position: relative;
-		top: 0.15em;
+    margin-top: 2%;
+    position: relative;
 
-	&__title
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: MyriadPro-Bold, 'Arial';
-		font-size: 1.75rem;
+    &__text
+        margin-left: 8.4%;
 
-	&__position
-		margin-left: 1.6%;
-		margin-bottom: -3.8%;
+    &__mark
+        font-size: 3.1em;
+        margin-left: 1.2%;
+        bottom: 5.6rem;
+        position: absolute;
 
-	&__place
-		text-transform: uppercase;
-		margin-left: 6.6%;  
-		display: block;
-		font-size: 1.75em;
-		font-family: MyriadPro-Regular, 'Arial';
+    &__title
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: MyriadPro-Bold, 'Arial';
+        font-size: 1.75rem;
+        display: inline-block;
 
-	&__description
-		display: block;
-		margin-left: 7.1%;
-		margin-top: 1%;
-		font-size: 1.05rem;
-		font-family: MyriadPro-Regular, 'Arial';
+    &__place
+        text-transform: uppercase;  
+        display: block;
+        font-size: 1.75em;
+        font-family: MyriadPro-Regular, 'Arial';
+        display: inline-block;
 
-	&__date
-		font-size: 1.75em;
-		font-family: MyriadPro-Regular, 'Arial';
-		margin-left: 2.4%;
+    &__description
+        margin-top: 1%;
+        font-size: 1.05rem;
+        font-family: MyriadPro-Regular, 'Arial';
+        display: inline-block;
+        margin-bottom: 0;
+
+    &__date
+        font-size: 1.75em;
+        font-family: MyriadPro-Regular, 'Arial';
+        margin-left: 2.4%;
+        display: inline-block;
 
 @media screen and (max-width: 55em) {
-	.note__place, .note__title, .note__date {
-		font-size: 1.45rem;
-	}
-	.note::before {
-		font-size: 2.1em;
-	}
+    .note__place, .note__title, .note__date {
+        font-size: 1.45rem;
+    }
+    .note::before {
+        font-size: 2.1em;
+    }
 }
 

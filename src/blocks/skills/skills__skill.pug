@@ -1,7 +1,7 @@
 mixin skill(name, totalPoints, currentPoints)
-	div.skills__skill
-		div.skills__skill-name= name
-		- for (var x = 0; x < currentPoints; x++)
-				li(class='skills__point skills__point_active')
-		- for (var x = 0; x < totalPoints - currentPoints; x++)
-				li(class='skills__point skills__point_passive')
+    div.skills__skill
+        div.skills__skill-name= name
+        - for (var x = 0; x < currentPoints; x++)
+                li(class='skills__point skills__point_active')
+        - for (var x = 0; x < totalPoints - currentPoints; x++)
+                li(class='skills__point skills__point_passive')

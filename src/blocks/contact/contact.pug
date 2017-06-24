@@ -1,8 +1,6 @@
-include ./contact__row.pug
-
-mixin contact()
-	table.contact
-		+contact__row('address','Main Street, City.')
-		+contact__row('e-mail','contact@domain.com','5')
-		+contact__row('phone','555-555-555')
-		+contact__row('website','www.yourweb.com')
+mixin contact(contacts)
+    .contact
+        each contact in contacts
+            .contact__row
+                .contact__method= contact['method']
+                .contact__value= contact['value']

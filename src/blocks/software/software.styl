@@ -2,37 +2,37 @@ $progress-bar_passive-color = #e6e6e6;
 $progress-bar_active-color = #3d6cb0;
 
 .software
-	display: flex;
+    display: flex;
 
-	&__column
-		width: 50%; 
-		margin-left: 1.2%;
-		margin-right: 10%;
+    &__column
+        width: 50%; 
+        margin-left: 1.2%;
+        margin-right: 10%;
 
-	&__product
-		margin-bottom: 6.7%;
+    &__product
+        margin-bottom: 6.7%;
 
-	&__progress-bar
-		height: 1.45em;
-		background: $progress-bar_passive-color; 
-		display: inline-block;
-		width: 18.85em;
+    &__progress-bar
+        height: 1.45em;
+        background: $progress-bar_passive-color; 
+        display: inline-block;
+        width: 18.85em;
 
-		&_points
-			height: inherit;
-			background-color: $progress-bar_active-color;
-			display: inline-block;
+        &_points
+            height: inherit;
+            background-color: $progress-bar_active-color;
+            display: inline-block;
 
-	&__product
-		margin-bottom: 6.7%;
+    &__product
+        margin-bottom: 6.7%;
 
-	&__progress-bar-name
-		font-size: 1.75em;
-		font-family: MyriadPro-Regular, 'Arial';
-		margin: 0.5em auto;
+    &__progress-bar-name
+        font-size: 1.75em;
+        font-family: MyriadPro-Regular, 'Arial';
+        margin: 0.5em auto;
 
 @media screen and (max-width: 30em) {
-	.software {
-		flex-direction: column;
-	}
+    .software {
+        flex-direction: column;
+    }
 }

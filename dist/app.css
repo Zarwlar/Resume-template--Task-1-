@@ -1,5 +1,7 @@
 .annotation {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .annotation__text {
   display: inline-block;
@@ -9,37 +11,37 @@
   font-size: 2.79rem;
   color: #006cb3;
   background: #fff;
-  bottom: 0.7rem;
   padding-left: 2.5%;
   padding-right: 2%;
+  margin: 0;
 }
 .annotation__icon {
   background: #fff;
   position: relative;
   height: 5em;
-  top: 1rem;
 }
 .annotation__position_profile {
-  margin-top: 16.15%;
+  margin-top: 13.15%;
   margin-bottom: 3.3%;
 }
 .annotation__position_contact {
-  margin-top: 8.5%;
+  margin-top: 10.5%;
   margin-bottom: 6.4%;
 }
 .annotation__position_skills {
-  margin-top: 1.1%;
+  margin-top: 11.1%;
   margin-bottom: 6%;
 }
 .annotation__position_education {
-  margin-bottom: 1.2%;
+  margin-top: 1.5%;
+  margin-bottom: 4%;
 }
 .annotation__position_experience {
-  margin-top: 10.1%;
-  margin-bottom: 3.5%;
+  margin-top: 8.3%;
+  margin-bottom: 6.5%;
 }
 .annotation__position_software {
-  margin-top: 10.5%;
+  margin-top: 8.6%;
   margin-bottom: 1.2%;
 }
 .annotation__line {
@@ -47,7 +49,7 @@
   position: absolute;
   width: 100%;
   z-index: -1;
-  top: 50%;
+  top: 45%;
   border-top: 0.15rem solid #fff;
   border-bottom: 0.4rem solid #3b6cb0;
 }
@@ -58,15 +60,15 @@
   font-family: MyriadPro-Bold, 'Arial';
   color: #006cb3;
   text-transform: uppercase;
-  width: 8.5rem;
+  display: inline-block;
+  min-width: 8.5rem;
 }
 .contact__row {
-  display: block;
   margin-bottom: 7.15%;
-  margin-left: -1.5%;
 }
 .contact__value {
   font-family: MyriadPro-Regular, 'Arial';
+  display: inline-block;
 }
 .container__main {
   width: 100%;
@@ -112,41 +114,45 @@
 .education__title_color-blue {
   color: #006cb3;
 }
-.note::before {
-  content: "\25CF";
-  font-size: 3.1em;
-  margin-right: 2.2%;
+.note {
+  margin-top: 2%;
   position: relative;
-  top: 0.15em;
+}
+.note__text {
+  margin-left: 8.4%;
+}
+.note__mark {
+  font-size: 3.1em;
+  margin-left: 1.2%;
+  bottom: 5.6rem;
+  position: absolute;
 }
 .note__title {
   text-transform: uppercase;
   font-weight: bold;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.75rem;
-}
-.note__position {
-  margin-left: 1.6%;
-  margin-bottom: -3.8%;
+  display: inline-block;
 }
 .note__place {
   text-transform: uppercase;
-  margin-left: 6.6%;
   display: block;
   font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
+  display: inline-block;
 }
 .note__description {
-  display: block;
-  margin-left: 7.1%;
   margin-top: 1%;
   font-size: 1.05rem;
   font-family: MyriadPro-Regular, 'Arial';
+  display: inline-block;
+  margin-bottom: 0;
 }
 .note__date {
   font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
   margin-left: 2.4%;
+  display: inline-block;
 }
 @media screen and (max-width: 55em) {
   .note__place,
@@ -160,6 +166,7 @@
 }
 .person {
   text-align: center;
+  margin-left: 3.5%;
 }
 .person__photo {
   background-color: #006cb3;
@@ -176,13 +183,11 @@
   padding-top: 100%;
 }
 .person__photo-frame {
-  position: relative;
   border: 2px solid #006cb3;
   border-radius: 50%;
   max-width: 15.4rem;
   margin: 0 auto;
-  left: 0.6rem;
-  bottom: 0.1rem;
+  position: relative;
 }
 .person__photo-frame:before {
   content: "";
@@ -190,30 +195,24 @@
   padding-top: 100%;
 }
 .person__name {
-  margin-left: 5.5%;
-  position: relative;
-  right: 0.2rem;
+  margin-top: 6%;
 }
 .person__first-name {
   text-transform: uppercase;
   font-family: MyriadPro-LightSemiExt, 'Arial';
   font-size: 3.67rem;
-  top: 1.65rem;
-  position: relative;
 }
 .person__specialty {
-  top: 0.15em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.634rem;
-  position: relative;
+  line-height: 4.7rem;
 }
 .person__surname {
-  top: 0.05em;
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 4.17rem;
-  position: relative;
+  line-height: 2.5rem;
 }
 @media screen and (max-width: 55em) {
   .person__photo-frame {
@@ -257,7 +256,7 @@
 .skills__list {
   padding: 0;
   margin: 0;
-  margin-left: 5%;
+  margin-left: 6%;
 }
 .skills__point {
   border-radius: 50%;
@@ -266,7 +265,6 @@
   margin-right: 2.5%;
   position: relative;
   width: 1.25rem;
-  left: 0.2rem;
 }
 .skills__point_active {
   background-color: #3d6cb0;

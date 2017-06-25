@@ -28,7 +28,8 @@ module.exports = {
         { test: /\.[ot]tf$/, use: 'url-loader?limit=5000&mimetype=application/octet-stream&name=fonts/[name].[ext]' },
         { test: /\.eot$/, use: 'url-loader?limit=5000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]' },
 
-        {test: /\.(jpe?g|png|gif|svg)$/i, exclude: [/fonts/], use: "file-loader?outputPath=images/"}
+        {test: /\.(jpe?g|png|gif|svg)$/i, exclude: [/fonts/], use: "file-loader?outputPath=images/"},
+        {test: /\.(ico)$/i, use: "file-loader?name=[name].[ext]"}
 ]
     },
 

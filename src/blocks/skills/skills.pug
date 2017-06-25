@@ -1,6 +1,11 @@
-include ./skills__list.pug
-
-mixin skills()
+mixin skills(options)
     div.skills
-        +skills__list()
+        div.skills__skill
+            each skill in options
+                ul.skills__list
+                    div.skills__skill-name= skill.name
+                    - for (var x = 0; x < skill.active_points; x++)
+                            li(class='skills__point skills__point_active')
+                    - for (var x = 0; x < skill.total_points - skill.active_points; x++)
+                            li(class='skills__point skills__point_passive')
 

@@ -15,7 +15,7 @@ mixin container__column_left()
         +annotation('contact')
         +contact([{method: 'address', value: 'Main Street, City.', }, { method: 'e-mail', value: 'contact@domain.com'}, { method: 'phone', value: '555-555-555'}, { method: 'website', value: 'www.yourweb.com'}])
         +annotation('skills')
-        +skills()
+        +skills([{'name': 'creative', 'total_points': 12, 'active_points': 9}, {'name': 'teamwork', 'total_points': 12, 'active_points': 11}, {'name': 'innovate', 'total_points': 12, 'active_points': 6}, {'name': 'communication', 'total_points': 12, 'active_points': 11}])
 
 mixin container__column_right()
     div.container__column_right

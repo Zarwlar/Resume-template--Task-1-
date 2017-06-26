@@ -121,10 +121,18 @@
   margin-left: 8.4%;
 }
 .note__mark {
-  font-size: 3.1em;
-  margin-left: 1.2%;
-  bottom: 5.6rem;
+  margin-left: 1.7%;
+  margin-top: 1%;
+  width: 1.5rem;
+  max-width: 5%;
+  background-color: #000;
+  border-radius: 50%;
   position: absolute;
+}
+.note__mark:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 .note__title {
   text-transform: uppercase;
@@ -158,9 +166,6 @@
   .note__title,
   .note__date {
     font-size: 1.45rem;
-  }
-  .note::before {
-    font-size: 2.1em;
   }
 }
 .person {

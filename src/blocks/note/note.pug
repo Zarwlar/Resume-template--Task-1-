@@ -1,6 +1,6 @@
 mixin note(title, date, place, desc, title_style)
     .note
-        .note__mark ●
+        .note__mark
         .note__text
             - if (typeof(title_style) !== 'undefined'){
                 span(class='note__title ' +title_style)=title

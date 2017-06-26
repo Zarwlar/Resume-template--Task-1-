@@ -5,9 +5,11 @@ $progress-bar_active-color = #3d6cb0;
     display: flex;
 
     &__column
-        width: 50%; 
-        margin-left: 1.2%;
-        margin-right: 10%;
+        width: 45%;
+
+        &:first-child
+            margin-right: 10.5%;
+            margin-left: 1.2%;
 
     &__product
         margin-bottom: 6.7%;
@@ -16,7 +18,7 @@ $progress-bar_active-color = #3d6cb0;
         height: 1.45em;
         background: $progress-bar_passive-color; 
         display: inline-block;
-        width: 18.85em;
+        width: 100%;
 
         &_points
             height: inherit;
@@ -30,9 +32,20 @@ $progress-bar_active-color = #3d6cb0;
         font-size: 1.75em;
         font-family: MyriadPro-Regular, 'Arial';
         margin: 0.5em auto;
+        text-transform: uppercase;
 
 @media screen and (max-width: 30em) {
     .software {
         flex-direction: column;
+        width: 100%;
+    }
+    .software__column {
+        width: 100%;
+    }
+    .sotftware__column:first-child {
+        margin: auto auto;
+    }
+    .software__column .software__product:last-child {
+        margin-bottom: auto;
     }
 }

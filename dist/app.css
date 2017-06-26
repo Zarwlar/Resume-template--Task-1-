@@ -20,27 +20,27 @@
   position: relative;
   height: 5em;
 }
-.annotation__position_profile {
-  margin-top: 13.15%;
+.annotation__profile {
+  margin-top: 14.85%;
   margin-bottom: 3.3%;
 }
-.annotation__position_contact {
+.annotation__contact {
   margin-top: 10.5%;
   margin-bottom: 6.4%;
 }
-.annotation__position_skills {
+.annotation__skills {
   margin-top: 11.1%;
   margin-bottom: 6%;
 }
-.annotation__position_education {
+.annotation__education {
   margin-top: 1.5%;
   margin-bottom: 4%;
 }
-.annotation__position_experience {
+.annotation__experience {
   margin-top: 8.3%;
   margin-bottom: 6.5%;
 }
-.annotation__position_software {
+.annotation__software {
   margin-top: 8.6%;
   margin-bottom: 1.2%;
 }
@@ -200,18 +200,25 @@
   text-transform: uppercase;
   font-family: MyriadPro-LightSemiExt, 'Arial';
   font-size: 3.67rem;
+  line-height: 4.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .person__specialty {
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 1.634rem;
-  line-height: 4.7rem;
+  line-height: 3.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .person__surname {
   text-transform: uppercase;
   font-family: MyriadPro-Bold, 'Arial';
   font-size: 4.17rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 55em) {
   .person__photo-frame {
@@ -244,7 +251,6 @@
   position: relative;
   text-transform: uppercase;
   margin-right: 5%;
-  margin-bottom: 3.5%;
 }
 .skills__skill-name {
   text-align: center;
@@ -254,7 +260,7 @@
 }
 .skills__list {
   padding: 0;
-  margin: 0;
+  margin: 0.9rem 0;
   margin-left: 6%;
 }
 .skills__point {
@@ -275,9 +281,11 @@
   display: flex;
 }
 .software__column {
-  width: 50%;
+  width: 45%;
+}
+.software__column:first-child {
+  margin-right: 10.5%;
   margin-left: 1.2%;
-  margin-right: 10%;
 }
 .software__product {
   margin-bottom: 6.7%;
@@ -286,7 +294,7 @@
   height: 1.45em;
   background: #e6e6e6;
   display: inline-block;
-  width: 18.85em;
+  width: 100%;
 }
 .software__progress-bar_points {
   height: inherit;
@@ -300,10 +308,21 @@
   font-size: 1.75em;
   font-family: MyriadPro-Regular, 'Arial';
   margin: 0.5em auto;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 30em) {
   .software {
     flex-direction: column;
+    width: 100%;
+  }
+  .software__column {
+    width: 100%;
+  }
+  .sotftware__column:first-child {
+    margin: auto auto;
+  }
+  .software__column .software__product:last-child {
+    margin-bottom: auto;
   }
 }
 @font-face {

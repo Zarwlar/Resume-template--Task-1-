@@ -1,6 +1,6 @@
 
 mixin annotation(name)
-    div(class='annotation__' + name).annotation
+    div(class='annotation_' + name).annotation
         img(src= 'blocks/annotation/__icon/_' + name + '/annotation__icon_' + name + '.png', alt= name class= "annotation__icon")
-        div(class='annotation__line annotation__line_' + name)
-        h2(class='annotation__text annotation__text_' + name)= name 
+        div(class='annotation__line')
+        h2(class='annotation__text')= name 
